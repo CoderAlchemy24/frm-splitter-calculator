@@ -28,9 +28,11 @@ personsNumField.addEventListener("input", ()=>{
     numOfPersons = parseInt(personsNumField.value);
     
     if (numOfPersons < 1) {
-        errorLabel.classList.remove('hidden')}
+        errorLabel.classList.remove('hidden');
+        personsNumField.classList.add('error');}
      else {
         errorLabel.classList.add('hidden');
+        personsNumField.classList.remove('error');
         
     }
 
